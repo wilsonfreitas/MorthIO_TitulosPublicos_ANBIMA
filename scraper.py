@@ -20,6 +20,7 @@ text = StringIO(text)
 _drop_first_3 = dropwhile(lambda x: x[0] < 3, enumerate(text))
 _drop_empy = ifilter(lambda x: x[1].strip() is not '', _drop_first_3)
 for c, line in _drop_empy:
+    print(c)
     row = line.split('@')
     tit = dict(
         titulo=row[0],
