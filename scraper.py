@@ -34,6 +34,6 @@ for c, line in _drop_empy:
         desvio_padrao=pp.parse(row[9])
     )
     scraperwiki.sqlite.save(
-        unique_keys=['titulo', 'data_base', 'data_vencimento'],
+        unique_keys=['titulo', 'data_referencia', 'data_vencimento'],
         data=tit
     )
